@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotinExamples">
         <activity
-            android:name=".RecyclerViewActivity"
-            android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
+            android:name=".RotateAnimationImage.RotateAnimation"
+            android:exported="true" />
         <activity
-            android:name=".ImageSwitcherActivity"
+            android:name=".SplashScreen.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,8 +25,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ImageSwitcherActivity"
+            android:exported="true" />
+        <activity
             android:name=".AlertDialogActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".CheckBox"
             android:exported="true" />
