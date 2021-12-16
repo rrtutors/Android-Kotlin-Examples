@@ -3,6 +3,7 @@
     package="com.nishajain.kotinexamples">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -12,21 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotinExamples">
         <activity
+            android:name=".SendMessage.MessageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".AndroidNavigation.SecondActivity"
             android:exported="true" />
         <activity
             android:name=".AndroidNavigation.FirstActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity
             android:name=".WebView.WebViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".RotateAnimationImage.RotateAnimation"
             android:exported="true" />
