@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotinExamples">
         <activity
-            android:name=".SendMessage.MessageActivity"
+            android:name=".NavigationDrawer.DrawerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,15 +22,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".SendMessage.MessageActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".AndroidNavigation.SecondActivity"
             android:exported="true" />
         <activity
             android:name=".AndroidNavigation.FirstActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".WebView.WebViewActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".RotateAnimationImage.RotateAnimation"
             android:exported="true" />
